@@ -5,7 +5,7 @@ const User = {
 }
 
 function createUser({ name: string, isActive: boolean }): void { }
-createUser({ name: "pavan", isActive: false })
+
 // object returns object
 
 function createCourse(): { name: string, price: number } {
@@ -21,4 +21,4 @@ const CreatedUser = {
     age: 22
 }
 
-createUser(CreatedUser)
+
