@@ -1,6 +1,6 @@
 // combining types
 
-type cardNmber = {
+type cardNumber = {
     cardNumber: number;
 }
 
