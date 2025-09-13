@@ -1,12 +1,13 @@
-type User = {
-    readonly id: string;
-    name: string;
-    email: string;
-    creditCardDetails?: number;  // Fixed typo
+// combining types
+
+type cardNmber = {
+    cardNumber: number;
 }
 
-const myUser: User = {
-    id: "1234",
-    name: "John",
-    email: "john@g.com",
+type cardDate = {
+    cardDate: string;
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number;
 }
