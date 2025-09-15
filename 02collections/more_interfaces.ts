@@ -17,11 +17,13 @@ interface User {
 
 // inheriting interface
 interface Admin extends User {
-    role: "admin" | "learner"
+    role: "admin" | "learner",
+    password: number
 }
 
 const oldUser: Admin = {
     role: "admin",
+    password: 123,
     email: "user@user.com",
     username: "user123",
     githubToken: "github",
